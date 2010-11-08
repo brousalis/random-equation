@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A796721B128721F8003A3C9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A796721A128721F8003A3C9D /* Foundation.framework */; };
+		A796721E128721F9003A3C9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A796721D128721F9003A3C9D /* main.m */; };
+		A79672301287221F003A3C9D /* RandomEquation.m in Sources */ = {isa = PBXBuildFile; fileRef = A796722F1287221F003A3C9D /* RandomEquation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7967214128721F8003A3C9D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A7967216128721F8003A3C9D /* RandomEquation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomEquation; sourceTree = BUILT_PRODUCTS_DIR; };
+		A796721A128721F8003A3C9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A796721C128721F9003A3C9D /* RandomEquation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomEquation.1; sourceTree = "<group>"; };
+		A796721D128721F9003A3C9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7967220128721F9003A3C9D /* RandomEquation_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomEquation_Prefix.pch; sourceTree = "<group>"; };
+		A796722E1287221F003A3C9D /* RandomEquation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RandomEquation.h; path = ../RandomEquation.h; sourceTree = "<group>"; };
+		A796722F1287221F003A3C9D /* RandomEquation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RandomEquation.m; path = ../RandomEquation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7967213128721F8003A3C9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A796721B128721F8003A3C9D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7967209128721F7003A3C9D = {
+			isa = PBXGroup;
+			children = (
+				A7967210128721F8003A3C9D /* Source */,
+				A7967211128721F8003A3C9D /* Documentation */,
+				A7967217128721F8003A3C9D /* Products */,
+				A7967219128721F8003A3C9D /* Frameworks */,
+				A796721F128721F9003A3C9D /* Other Sources */,
+			);
+			sourceTree = "<group>";
+		};
+		A7967210128721F8003A3C9D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A796722E1287221F003A3C9D /* RandomEquation.h */,
+				A796722F1287221F003A3C9D /* RandomEquation.m */,
+				A796721D128721F9003A3C9D /* main.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A7967211128721F8003A3C9D /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				A796721C128721F9003A3C9D /* RandomEquation.1 */,
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		A7967217128721F8003A3C9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7967216128721F8003A3C9D /* RandomEquation */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7967219128721F8003A3C9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A796721A128721F8003A3C9D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A796721F128721F9003A3C9D /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A7967220128721F9003A3C9D /* RandomEquation_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7967215128721F8003A3C9D /* RandomEquation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7967223128721F9003A3C9D /* Build configuration list for PBXNativeTarget "RandomEquation" */;
+			buildPhases = (
+				A7967212128721F8003A3C9D /* Sources */,
+				A7967213128721F8003A3C9D /* Frameworks */,
+				A7967214128721F8003A3C9D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RandomEquation;
+			productName = RandomEquation;
+			productReference = A7967216128721F8003A3C9D /* RandomEquation */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A796720B128721F7003A3C9D /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = A796720E128721F7003A3C9D /* Build configuration list for PBXProject "RandomEquation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A7967209128721F7003A3C9D;
+			productRefGroup = A7967217128721F8003A3C9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7967215128721F8003A3C9D /* RandomEquation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7967212128721F8003A3C9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A796721E128721F9003A3C9D /* main.m in Sources */,
+				A79672301287221F003A3C9D /* RandomEquation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A7967221128721F9003A3C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		A7967222128721F9003A3C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		A7967224128721F9003A3C9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RandomEquation_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = RandomEquation;
+			};
+			name = Debug;
+		};
+		A7967225128721F9003A3C9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RandomEquation_Prefix.pch;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = RandomEquation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A796720E128721F7003A3C9D /* Build configuration list for PBXProject "RandomEquation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7967221128721F9003A3C9D /* Debug */,
+				A7967222128721F9003A3C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7967223128721F9003A3C9D /* Build configuration list for PBXNativeTarget "RandomEquation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7967224128721F9003A3C9D /* Debug */,
+				A7967225128721F9003A3C9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A796720B128721F7003A3C9D /* Project object */;
+}
