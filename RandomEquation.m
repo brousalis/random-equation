@@ -1,5 +1,9 @@
 #import "RandomEquation.h"
 
+#import "ValueNode.h"
+#import "AdditionNode.h"
+#import "SubtractionNode.h"
+
 @implementation RandomEquation
 
 @synthesize level = _level;
@@ -9,7 +13,7 @@
 #pragma mark Init
 - (id) initWithLevel:(NSInteger) level
 {    
-    if(self = [super init])
+    if((self = [super init]))
     {
         _level = level;
         [self generateRandomEquation:level];
@@ -21,28 +25,21 @@
 #pragma mark Random Generation
 - (void) generateRandomEquation:(NSInteger) level 
 {
-    NSMutableArray *equationString = [[NSMutableArray alloc] init];
-    int numOfNumbers = 2 + arc4random() % 3;
-    NSLog(@"Numbers: %d", numOfNumbers);
+    // Initialize the equation
+    id<EquationNode> eqn = [[[ValueNode alloc] initWithValue:[NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%d", [self randomNumber:level]]]] autorelease];
     
-    int numArray[numOfNumbers];
-    for(int i = 0; i < numOfNumbers; i++) {
-        int random = [self randomNumber:level];
-        numArray[i] = random;
-        [equationString addObject:[NSNumber numberWithInt:random]];
-        
-        NSString *sign = [self fifty] ? @"+" : @"-";
-        
-        if(i != numOfNumbers - 1)
-            [equationString addObject:sign];
-        else
-        
-        [sign release];
+    // Build on the equation
+    for(int i = 0; i < (1 + arc4random() % 3); i++) {
+        id<EquationNode> val = [[[ValueNode alloc] initWithValue:[NSDecimalNumber decimalNumberWithString:[NSString stringWithFormat:@"%d", [self randomNumber:level]]]] autorelease];
+        if([self randomBool]) {
+            eqn = [[[AdditionNode alloc] initWithLeftNode:eqn rightNode:val] autorelease];
+        } else {
+            eqn = [[[SubtractionNode alloc] initWithLeftNode:eqn rightNode:val] autorelease];
+        }
     }
     
-    _equation = [equationString componentsJoinedByString:@" "];
-
-    [equationString release];
+    // Save it
+    self.equation = eqn;
 }
 
 - (int) randomNumber:(NSInteger)level 
@@ -52,31 +49,12 @@
     return random_number;
 }
 
-- (int) solve: (NSString *) string
+- (int) solve
 {
-    int result = 0;
-    
-    NSScanner *scanner = [NSScanner scannerWithString: string];
-    [scanner setCharactersToBeSkipped: nil];
-    NSString *delimiter = @",";
-
-    while (![scanner isAtEnd]) {
-        int next = 0;
-        if (![scanner scanInt:  &next ]) {
-            [NSException raise: @"NumberExpected" format: @"Expected a number, found %@ instead", [string substringFromIndex:  [scanner scanLocation]]];
-        };
-        if (next < 1000) {
-            result += next;
-        }
-        if (![scanner scanString: delimiter intoString: NULL]) {
-            [scanner scanString:  @"\n" intoString:  NULL];
-        }
-    }
-    
-    return result;
+    return [[self.equation evaluate] intValue];
 }
 
-- (BOOL) fifty 
+- (BOOL) randomBool 
 {
     return (arc4random() % 2 ? YES : NO);
 }

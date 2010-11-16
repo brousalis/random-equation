@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220E8F3E1292F4EA001C8B4E /* ValueNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 220E8F3D1292F4EA001C8B4E /* ValueNode.m */; };
+		22B4F1A81292F87600A28756 /* AdditionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4F1A71292F87600A28756 /* AdditionNode.m */; };
+		22B4F1AC1292FDAF00A28756 /* SubtractionNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B4F1AB1292FDAF00A28756 /* SubtractionNode.m */; };
 		A796721B128721F8003A3C9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A796721A128721F8003A3C9D /* Foundation.framework */; };
 		A796721E128721F9003A3C9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A796721D128721F9003A3C9D /* main.m */; };
 		A79672301287221F003A3C9D /* RandomEquation.m in Sources */ = {isa = PBXBuildFile; fileRef = A796722F1287221F003A3C9D /* RandomEquation.m */; };
@@ -25,6 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		220E8F3C1292F4EA001C8B4E /* ValueNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueNode.h; sourceTree = "<group>"; };
+		220E8F3D1292F4EA001C8B4E /* ValueNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueNode.m; sourceTree = "<group>"; };
+		220E8F401292F571001C8B4E /* EquationNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EquationNode.h; sourceTree = "<group>"; };
+		22B4F1A61292F87600A28756 /* AdditionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionNode.h; sourceTree = "<group>"; };
+		22B4F1A71292F87600A28756 /* AdditionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionNode.m; sourceTree = "<group>"; };
+		22B4F1AA1292FDAF00A28756 /* SubtractionNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubtractionNode.h; sourceTree = "<group>"; };
+		22B4F1AB1292FDAF00A28756 /* SubtractionNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubtractionNode.m; sourceTree = "<group>"; };
 		A7967216128721F8003A3C9D /* RandomEquation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RandomEquation; sourceTree = BUILT_PRODUCTS_DIR; };
 		A796721A128721F8003A3C9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A796721C128721F9003A3C9D /* RandomEquation.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = RandomEquation.1; sourceTree = "<group>"; };
@@ -63,6 +73,13 @@
 				A796722E1287221F003A3C9D /* RandomEquation.h */,
 				A796722F1287221F003A3C9D /* RandomEquation.m */,
 				A796721D128721F9003A3C9D /* main.m */,
+				220E8F401292F571001C8B4E /* EquationNode.h */,
+				220E8F3C1292F4EA001C8B4E /* ValueNode.h */,
+				220E8F3D1292F4EA001C8B4E /* ValueNode.m */,
+				22B4F1A61292F87600A28756 /* AdditionNode.h */,
+				22B4F1A71292F87600A28756 /* AdditionNode.m */,
+				22B4F1AA1292FDAF00A28756 /* SubtractionNode.h */,
+				22B4F1AB1292FDAF00A28756 /* SubtractionNode.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -148,6 +165,9 @@
 			files = (
 				A796721E128721F9003A3C9D /* main.m in Sources */,
 				A79672301287221F003A3C9D /* RandomEquation.m in Sources */,
+				220E8F3E1292F4EA001C8B4E /* ValueNode.m in Sources */,
+				22B4F1A81292F87600A28756 /* AdditionNode.m in Sources */,
+				22B4F1AC1292FDAF00A28756 /* SubtractionNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
