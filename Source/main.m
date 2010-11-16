@@ -6,7 +6,7 @@ int main (int argc, const char * argv[])
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
     RandomEquation *equation = [[RandomEquation alloc] initWithLevel:1];
-    NSLog(@"%@",equation);
+    NSLog(@"%@ = %d", equation, [equation solve]);
     [equation release];
 
     [pool drain];
