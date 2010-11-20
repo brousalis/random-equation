@@ -1,5 +1,4 @@
 #import <Foundation/Foundation.h>
-
 #import "EquationNode.h"
 
 @interface RandomEquation : NSObject {

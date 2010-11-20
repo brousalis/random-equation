@@ -1,5 +1,4 @@
 #import "RandomEquation.h"
-
 #import "ValueNode.h"
 #import "AdditionNode.h"
 #import "SubtractionNode.h"

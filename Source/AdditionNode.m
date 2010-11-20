@@ -1,13 +1,4 @@
-//
-//  AdditionNode.m
-//  RandomEquation
-//
-//  Created by Tim Ekl on 11/16/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
-//
-
 #import "AdditionNode.h"
-
 #import "ValueNode.h"
 
 @implementation AdditionNode
